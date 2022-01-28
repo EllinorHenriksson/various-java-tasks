@@ -9,12 +9,12 @@ import java.util.Scanner;
 public class Nine {
   /**
    * Simulates a game of dice between the user and the computer. 
-   * 
+   *
    * @param args - Input (if available).
    */
   public static void main(String[] args) {
     Random rand = new Random();
-    Scanner scan = new Scanner(System.in);
+    Scanner scan = new Scanner(System.in, "utf-8");
     
     System.out.print("Ready to play? (Y/N) ");
 
@@ -47,7 +47,7 @@ public class Nine {
 
   /**
    * Gets a random integer between 1 and 6.
-   * 
+   *
    * @param rand - The Random object to use.
    * @return A random integer between 1 and 6.
    */
@@ -57,7 +57,7 @@ public class Nine {
 
   /**
    * Compares the scores of two players and returns the result as a string.
-   * 
+   *
    * @param score1 - The score of the first player.
    * @param score2 - The score of the second player.
    * @param player1 - The name of the first player.

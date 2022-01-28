@@ -8,11 +8,11 @@ import java.util.Scanner;
 public class Time {
   /**
    * Translates seconds to hours, minutes and seconds.
-   * 
+   *
    * @param args - Input (if available).
    */
   public static void main(String[] args) {
-    Scanner scan = new Scanner(System.in);
+    Scanner scan = new Scanner(System.in, "utf-8");
     System.out.print("Enter the number of seconds: ");
     int seconds = scan.nextInt();
     

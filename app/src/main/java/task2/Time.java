@@ -8,6 +8,7 @@ import java.util.Scanner;
 public class Time {
   /**
    * Translates seconds to hours, minutes and seconds.
+   * 
    * @param args - Input (if available).
    */
   public static void main(String[] args) {

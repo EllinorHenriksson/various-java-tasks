@@ -6,6 +6,7 @@ package task1;
 public class Hello {
   /**
    * Prints "Hello World!".
+   * 
    * @param args - Input (if available).
    */
   public static void main(String[] args) {

@@ -3,11 +3,11 @@ package task5;
 import java.util.Scanner;
 
 /**
- * The program.
+ * A program that prints a diamond wich size is given by the user.
  */
 public class Diamonds {
   /**
-   * The main method.
+   * Prints a diamond wich size (given as a positive integer) is decided by the user.
    *
    * @param args - Input (if available).
    */
@@ -21,43 +21,23 @@ public class Diamonds {
 
     int number = scan.nextInt();
     if (number > 0) {
-      /*
-      int count = number;
-      for (int i = 0; i < number; i++) {
-        for (int j = 0; j < count; j++) {
-          if (j < number - count) {
+      for (int i = 1; i <= number; i++) {
+        for (int j = 1; j < number + i; j++) {
+          if (j <= number - i) {
             System.out.print(" ");
           } else {
             System.out.print("*");
           }
         }
         System.out.print("\n");
-        count++;
       }
-      for (int i = 0; i < number - 1; i++) {
-        for (int j = 0; j < count - 1; j++) {
-          if (j < number - count) {
+      for (int i = 1; i < number; i++) {
+        for (int j = 1; j < number * 2 - i; j++) {
+          if (j <= i) {
             System.out.print(" ");
           } else {
             System.out.print("*");
           }
-        }
-        count--;
-      }
-      */
-      for (int i = 1; i <= number * 2; i++) {
-        if (i <= number) {
-          // Mot mitten
-          for (int j = 1; j < number + i; j++) {
-            if (j <= number - i) {
-              System.out.print(" ");
-            } else {
-              System.out.print("*");
-            }
-          }
-        } else {
-          // Från mitten
-          System.out.println("Från mitten");
         }
         System.out.print("\n");
       }

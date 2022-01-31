@@ -64,7 +64,7 @@ dependencies {
 application {
     // Define the main class for the application.
     // mainClass = 'assignment1.App'
-    mainClass = 'task6.GameSrp'
+    mainClass = 'task7.DayOfWeek'
 }
 
 run {

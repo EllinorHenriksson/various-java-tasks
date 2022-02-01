@@ -63,12 +63,11 @@ dependencies {
 
 application {
     // Define the main class for the application.
-    // mainClass = 'assignment1.App'
-    mainClass = 'task7.DayOfWeek'
+    mainClass = 'assignment1.App'
 }
 
 run {
-  standardInput = System.in
+    standardInput = System.in
 }
 
 tasks.named('test') {

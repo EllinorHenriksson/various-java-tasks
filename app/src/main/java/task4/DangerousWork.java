@@ -14,7 +14,6 @@ public class DangerousWork {
   public static void main(String[] args) {
     Scanner scan = new Scanner(System.in, "utf-8");
     System.out.print("How much would you like to earn? ");
-    // double sum = scan.nextDouble();
     int sum = scan.nextInt();
 
     int days = 0;
@@ -23,7 +22,13 @@ public class DangerousWork {
       days += 1;
       money += 0.01 * Math.pow(2, days - 1);
     } 
-    System.out.println("It will take " + days + " days to earn the money.");
+
+    if (days <= 30) {
+      System.out.println("It will take " + days + " days to earn the money.");
+    } else {
+      System.out.println("Sorry, you won't survive as it will take more than 30 days to earn the money.");
+    }
+
     scan.close();
   }
 }
